@@ -1,0 +1,39 @@
+body {
+  background-image: url(https://ki.ill.in.ua/m/670x450/24463998.jpg);
+  margin-top: 250px;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+}
+
+.new-year {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: rgb(255, 0, 200);
+  font-size: 44px;
+}
+
+.timer {
+  font-size: 50px;
+  font-weight: 900;
+  padding: 20px;
+  padding-right: 150px;
+  border: 15px double rgb(5, 70, 75);
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+
+  color: rgb(233, 17, 17);
+}
+.field {
+  display: flex;
+  width: 500px;
+}
+
+.value {
+  margin: 0 auto;
+  width: 25px;
+}

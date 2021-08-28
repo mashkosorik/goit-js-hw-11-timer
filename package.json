@@ -1,0 +1,46 @@
+{
+  "name": "parcel-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-11-timer/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxplanjay/parcel-deploy-tutorial.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luxplanjay/parcel-deploy-tutorial/issues"
+  },
+  "homepage": "https://mashkosorik.github.io/goit-js-hw-11-timer",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  }
+}

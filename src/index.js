@@ -1,9 +1,4 @@
-const refs = {
-  days: document.querySelector('[data-value="days"]'),
-  hours: document.querySelector('[data-value="hours"]'),
-  minutes: document.querySelector('[data-value="mins"]'),
-  seconds: document.querySelector("[data-value='secs']"),
-};
+import { refs } from './js/refs';
 
 class Timer {
   constructor(startTime, stopTime) {
@@ -61,7 +56,6 @@ class Timer {
     this.updateClockFace();
   }
 }
-
 const timer = new Timer(Date.now(), '31 dec 2021 23:59:59');
 timer.updateDate();
 timer.start();
